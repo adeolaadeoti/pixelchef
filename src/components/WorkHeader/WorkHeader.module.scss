@@ -1,0 +1,39 @@
+/*--------------------------
+    variables
+---------------------------*/
+//fonts
+$primary-font: "Trueno-Light", sans-serif;
+$secondary-font: "Trueno-Regular", sans-serif;
+
+//colors
+$primary-color: #000000;
+$secondary-color: #f9b42a;
+$gray: #acacac;
+$white: #ffffff;
+
+.header {
+  position: relative;
+  background-image: url("../../assets/png/sleepiest.png");
+  padding: 8rem 8rem;
+  color: $white;
+  background-size: cover;
+  background-position-y: 90rem;
+
+  .headingOne {
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    margin-right: 2rem;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: $primary-color;
+    display: inline-block;
+    margin-top: 16rem;
+    font-weight: normal;
+    line-height: 21px;
+    span {
+      font-family: $secondary-font;
+      font-weight: 100;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
+const containerVariant = {
+  initial: {
+    opacity: 0,
+    x: -100
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: .5,
+      staggerChildren: 0.1,
+      when:'beforeChildren',
+    }
+  }
+}
+const textVariant = {
+  initial: {
+    opacity: 0,
+    y: 10
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: .7,
+    }
+  }
+}
+
+const Home = () => {
+  return (
+    <>
+    <motion.div animate={{  }} className="home container">
+      <motion.h2 drag initial={{opacity: 0, x: 30}} animate={{opacity: 1, x: 0}} transition={{type: 'spring', stiffness: 500, delay: 1, duration:.75}}>
+        Welcome to Pizza Joint
+      </motion.h2>
+      <Link to="/base">
+        <motion.button initial={{opacity: 0, x: -30}} animate={{opacity: 1, x: 0}} transition={{type: 'spring', stiffness: 500, delay: 1, duration:.75}}>
+          Create Your Pizza
+        </motion.button>
+      </Link>
+    </motion.div>
+    <motion.div className='fl' variants={containerVariant} initial="initial" animate="animate">
+      <motion.p variants={textVariant}>A</motion.p>
+      <motion.p variants={textVariant}>D</motion.p>
+      <motion.p variants={textVariant}>E</motion.p>
+      <motion.p variants={textVariant}>O</motion.p>
+      <motion.p variants={textVariant}>L</motion.p>
+      <motion.p variants={textVariant}>A</motion.p>
+    </motion.div>
+    </>
+  )
+}
+
+export default Home;

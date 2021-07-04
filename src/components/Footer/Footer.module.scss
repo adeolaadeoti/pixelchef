@@ -1,0 +1,126 @@
+/*--------------------------
+    variables
+---------------------------*/
+//fonts
+$primary-font: 'Trueno-Light', sans-serif;
+$secondary-font: 'Trueno-Regular', sans-serif;
+
+//colors
+$primary-color: #000000;
+$secondary-color: #F9B42A;
+$gray: #ACACAC;
+$white: #FFFFFF;
+
+.footer {
+    background-image: url('../../assets/png/footer-bg.png');
+    padding: 8rem 3rem;
+    color: $white;
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
+
+    &__wrapper {
+        grid-column: 2/14;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__contentWrapper {
+        flex: 0 0 70%;
+        
+        .footer__top {
+            margin-bottom: 8rem;
+            h1 {
+                font-weight: 100;
+                color: $secondary-color;
+                line-height: 40px;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                display: inline-block;
+                color: $white;
+                img {
+                    margin-left: 2rem;
+                    transition: all .2s ease-in-out;
+                }
+                &:hover {
+                    img {
+                        margin-left: 3rem;
+                    }
+                }
+            }
+        }
+        .footer__bottom {
+            display: flex;
+            align-items: top;
+
+            h2 {
+                font-weight: 100;
+                margin-bottom: 3rem;
+            }
+            a {
+                margin-bottom: 2rem;
+                display: inline-block;
+                color: $gray;
+                &:hover {
+                    color: $white;
+                }
+            }
+
+            address {
+                font-style: normal;
+                p {
+                    color: $gray;
+                }
+            }
+
+            .footer__connected {
+                margin-left: 22rem;
+                .footer__socials {
+                    display: flex;
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        &:first-child {
+                            margin-right: 3rem;
+                        }
+                    }
+                    a {
+                        margin-right: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__dragWrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5.5rem;
+
+        img {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        img:nth-of-type(1) {
+            position: absolute;
+            top: 8rem;
+        }
+        img:nth-of-type(2) {
+            position: absolute;
+            top: 10rem;
+            left: 5rem;
+            z-index: 1;
+        }
+        img:nth-of-type(3) {
+            position: absolute;
+            left: 8rem;
+            top: 0rem;
+        }
+    }
+}

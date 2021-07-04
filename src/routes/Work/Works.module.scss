@@ -1,0 +1,89 @@
+/*--------------------------
+    variables
+---------------------------*/
+//fonts
+$primary-font: "Trueno-Light", sans-serif;
+$secondary-font: "Trueno-Regular", sans-serif;
+
+//colors
+$primary-color: #000000;
+$secondary-color: #f9b42a;
+$gray: #acacac;
+$white: #ffffff;
+
+.client {
+  grid-column: 2/14;
+  padding: 8rem 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  h2 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 24px;
+  }
+  &__left {
+  }
+
+  &__right {
+  }
+}
+
+.next {
+  grid-column: 1/15;
+  padding: 8rem 0rem;
+  text-align: center;
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 4rem;
+    }
+  }
+
+  .bottomWrapper {
+    .home__bottom {
+      display: flex;
+      align-items: center;
+      width: 180vw;
+      margin-top: 3rem;
+
+      a {
+        text-decoration: none;
+        font-size: 5rem;
+        font-family: "Trueno-Black";
+        display: inline-flex;
+        color: transparent;
+        -webkit-text-stroke: 1px $primary-color;
+        margin-left: 2.5rem;
+        &:hover {
+          color: $primary-color;
+          -webkit-text-stroke: 1px transparent;
+        }
+      }
+    }
+  }
+}
+
+.work {
+  grid-column: 2/14;
+
+  .work_img {
+    width: 100%;
+
+  }
+  .workContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    margin-top: 6rem;
+    img {
+        width: 100%;
+    }
+  }
+}
