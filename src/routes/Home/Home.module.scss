@@ -237,8 +237,9 @@ $white: #ffffff;
     .home__bottom {
       display: flex;
       align-items: center;
-      width: 180vw;
+      max-width: 100vw;
       margin-top: 3rem;
+      overflow-x: scroll;
 
       a {
         text-decoration: none;

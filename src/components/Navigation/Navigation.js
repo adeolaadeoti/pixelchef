@@ -31,20 +31,19 @@ import { MobileNavigation } from "./MobileNavigation";
 
 const sidebar = {
   open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    clipPath: `circle(${height * 2 + 200}px at 98% 4%)`,
     transition: {
       type: "spring",
-      stiffness: 20,
+      stiffness: 200,
       restDelta: 2,
     },
   }),
   closed: {
-    clipPath: "circle(30px at 95% 5%)",
-    // clip-path: circle(50% at 50% 50%);
+    clipPath: "circle(1px at 98% 4%)",
     transition: {
       delay: 0.5,
       type: "spring",
-      stiffness: 400,
+      stiffness: 200,
       damping: 40,
     },
   },
@@ -64,7 +63,7 @@ const Navigation = () => {
     >
       <motion.div className="background" variants={sidebar} />
       <MobileNavigation />
-      <MenuToggle toggle={() => toggleOpen()} />
+      <MenuToggle toggle={() => toggleOpen()} toggleState={isOpen} />
     </motion.div>
   );
 };
