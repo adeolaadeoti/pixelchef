@@ -3,10 +3,26 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import style from "./Work.module.scss";
 import { Link } from "react-router-dom";
+import Navigation from "../../components/Navigation/Navigation";
 
 const Work = () => {
   return (
     <>
+    <nav className={style.navContainer}>
+      <Link to="/">
+        <div className={style.logo}>
+          <img
+            src={require("../../assets/svg/pixelchef-emblem-white.svg")}
+            alt="pixelchef emblem"
+          />
+          <img
+            src={require("../../assets/svg/pixelchef-text-white.svg")}
+            alt="pixelchef text"
+          />
+        </div>
+        </Link>
+        <Navigation />
+      </nav>
       <Header first={"An agency for"} second={"the detailed"} imgName="work" />
       <main>
         <section className={style.about__work}>

@@ -114,3 +114,60 @@ $white: #FFFFFF;
         }
     }
 }
+
+.navContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 5rem;
+      top: 4rem;
+      position: absolute;
+  
+      img:nth-of-type(2) {
+        margin-left: 1.5rem;
+      }
+    }
+    .navIcon {
+      right: 5rem;
+      top: 4rem;
+      z-index: 10;
+      cursor: pointer;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      p {
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+      }
+  
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
+  
+        .bar1,
+        .bar2,
+        .bar3 {
+          width: 40px;
+          height: 1.75px;
+          margin: 2px 0;
+          transition: 0.4s;
+          background-color: $primary-color;
+          pointer-events: none;
+        }
+        .bar3 {
+          width: 20px;
+          transform-origin: right;
+        }
+      }
+    }
+  }

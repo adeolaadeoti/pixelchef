@@ -1,0 +1,117 @@
+/*--------------------------
+    variables
+---------------------------*/
+//fonts
+$primary-font: "Trueno-Light", sans-serif;
+$secondary-font: "Trueno-Regular", sans-serif;
+
+//colors
+$primary-color: #000000;
+$secondary-color: #f9b42a;
+$gray: #acacac;
+$white: #ffffff;
+
+.container {
+  background-color: $primary-color;
+  color: $white;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 6rem;
+  .close {
+    float: right;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    cursor: pointer;
+    svg {
+      margin-left: 1rem;
+    }
+  }
+
+  .h1 {
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+    padding-left: 10rem;
+    font-size: 4.5rem;
+    font-weight: 100;
+  }
+
+  form {
+    padding: 0 20rem;
+    .input {
+      display: block;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      font-size: 2.5rem;
+      border-bottom: 1px solid #707070;
+      padding: 2rem 1.5rem;
+      width: 100%;
+      color: $white;
+      font-family: $primary-font;
+      &::-webkit-input-placeholder {
+        font-family: $primary-font;
+      }
+      &:not(:first-child) {
+        margin-top: 4rem;
+      }
+    }
+
+    textarea {
+      display: block;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      font-size: 2.5rem;
+      border-bottom: 1px solid #707070;
+      padding: 0.2rem;
+      width: 100%;
+      height: 62.5%;
+      &::-webkit-input-placeholder {
+        font-family: $primary-font;
+      }
+      font-family: inherit;
+      margin-bottom: 2rem;
+      resize: none;
+      color: $white;
+      margin-top: 5rem;
+    }
+
+    .inputButton {
+      padding: 2rem 6rem;
+      font-family: $primary-font;
+      color: #707070;
+      border: 1px solid #707070;
+      background-color: transparent;
+      display: inline-block;
+      margin-top: 2rem;
+      font-size: 2.5rem;
+      position: relative;
+      // overflow: hidden;
+      z-index: 1;
+      cursor: pointer;
+
+      // &::after {
+      //   display: inline-block;
+      //   content: "";
+      //   width: 100%;
+      //   height: 100%;
+      //   background-color: $white;
+      //   position: absolute;
+      //   top: 0;
+      //   left: -100%;
+      //   transition: all 0.3s ease-in-out;
+      //   z-index: -1;
+      // }
+
+      &:hover {
+        border: 1px solid $white;
+        color: $white;
+        // &::after {
+        //   left: 0;
+        // }
+      }
+    }
+  }
+}

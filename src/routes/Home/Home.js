@@ -2,23 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import style from "./Home.module.scss";
-import Navigation from '../../components/Navigation/Navigation'
+import Navigation from "../../components/Navigation/Navigation";
 
 const Home = () => {
   return (
     <>
       <nav className={style.navContainer}>
-        <div className={style.logo}>
-          <img
-            src={require("../../assets/svg/pixelchef-emblem.svg")}
-            alt="pixelchef emblem"
-          />
-          <img
-            src={require("../../assets/svg/pixelchef-text.svg")}
-            alt="pixelchef text"
-          />
-        </div>
-        <Navigation/>
+        <Link to="/">
+          <div className={style.logo}>
+            <img
+              src={require("../../assets/svg/pixelchef-emblem.svg")}
+              alt="pixelchef emblem"
+            />
+            <img
+              src={require("../../assets/svg/pixelchef-text.svg")}
+              alt="pixelchef text"
+            />
+          </div>
+        </Link>
+        <Navigation />
       </nav>
       <header className={style.header}>
         <div className={style.header__hero}>

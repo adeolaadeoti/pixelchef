@@ -6,13 +6,13 @@ const Path = (props) => (
 );
 
 export const MenuToggle = ({ toggle, toggleState }) => (
-  <button onClick={toggle}>
+  <button className="button" onClick={toggle}>
     {toggleState === true ? <span>CLOSE</span> : <span>MENU</span>}
     <svg width="57" height="20" viewBox="0 0 26 20">
       <Path
         variants={{
           closed: { d: "M 2 2.5 L 57 2.5" },
-          open: { d: "M 3 16.5 L 17 2.5" },
+          open: { d: "M 1 14.5 L 57 2.5" },
         }}
       />
       <Path
@@ -26,7 +26,7 @@ export const MenuToggle = ({ toggle, toggleState }) => (
       <Path
         variants={{
           closed: { d: "M 2 16.346 L 27 16.346" },
-          open: { d: "M 3 2.5 L 17 16.346" },
+          open: { d: "M 1 5 L 57 18.346" },
         }}
       />
     </svg>

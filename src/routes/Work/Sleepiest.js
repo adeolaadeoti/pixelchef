@@ -3,10 +3,27 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import WorkHeader from "../../components/WorkHeader/WorkHeader";
 import style from "./Works.module.scss";
+import Navigation from "../../components/Navigation/Navigation";
+
 
 const Sleepiest = () => {
   return (
     <>
+    <nav className={style.navContainer}>
+      <Link to="/">
+        <div className={style.logo}>
+          <img
+            src={require("../../assets/svg/pixelchef-emblem-white.svg")}
+            alt="pixelchef emblem"
+          />
+          <img
+            src={require("../../assets/svg/pixelchef-text-white.svg")}
+            alt="pixelchef text"
+          />
+        </div>
+        </Link>
+        <Navigation />
+      </nav>
       <WorkHeader />
       <main className="main">
         <section className={style.client}>
