@@ -6,6 +6,7 @@ const variants = {
   open: {
     y: 0,
     opacity: 1,
+    display: 'block',
     transition: {
       y: { stiffness: 1000, velocity: -100 },
       delay: 0.5,
@@ -13,6 +14,7 @@ const variants = {
   },
   closed: {
     y: 50,
+    display: 'none',
     opacity: 0,
     transition: {
       y: { stiffness: 1000 },

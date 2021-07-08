@@ -33,7 +33,7 @@ const Home = () => {
           </p>
           <h1>
             We are a creative <br />
-            agency for
+            agency for{" "}
             <span>
               ambitious <br />
               business.
@@ -136,12 +136,20 @@ const Home = () => {
           </div>
           <div className={style.bottomWrapper}>
             <div className={style.home__bottom}>
-              <Link to="/work">see the work</Link>
-              <Link to="/work">see the work</Link>
-              <Link to="/work">see the work</Link>
-              <Link to="/work">see the work</Link>
-              <Link to="/work">see the work</Link>
-              <Link to="/work">see the work</Link>
+              <div className={style.home__bottomWrapper}>
+                <Link to="/work">see the work</Link>
+                <Link to="/work">see the work</Link>
+                <Link to="/work">see the work</Link>
+                <Link to="/work">see the work</Link>
+                <Link to="/work">see the work</Link>
+                <Link to="/work">see the work</Link>
+                <Link to="/work">see the work</Link>
+                <Link to="/work">see the work</Link>
+                <Link to="/work">see the work</Link>
+                <Link to="/work">see the work</Link>
+                <Link to="/work">see the work</Link>
+                <Link to="/work">see the work</Link>
+              </div>
             </div>
           </div>
         </section>

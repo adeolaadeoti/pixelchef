@@ -25,15 +25,33 @@ const sidebar = {
 const Navigation = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
+  // if isOpen is true, select the body element
+  // and apply a style to make it unscrollable
+  // else if isOpen is false, remove the style
+  function toggleBodyScroll(isOpen) {
+    const body = document.body;
+    if (isOpen) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "";
+    }
+  }
+
+  React.useEffect(() => {
+    toggleBodyScroll(isOpen);
+  }, [isOpen]);
+
   return (
     <motion.div
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      className='nav'
+      className="nav"
     >
-      <motion.div className="background" variants={sidebar} />
-      <MobileNavigation />
-      <MenuToggle toggle={() => toggleOpen()} toggleState={isOpen} />
+      <div className="nav-container">
+        <motion.div className="background" variants={sidebar} />
+        <MobileNavigation />
+        <MenuToggle toggle={() => toggleOpen()} toggleState={isOpen} />
+      </div>
     </motion.div>
   );
 };
