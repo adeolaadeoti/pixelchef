@@ -47,11 +47,14 @@ const Navigation = () => {
       animate={isOpen ? "open" : "closed"}
       className="nav"
     >
-      <div className="nav-container">
-        <motion.div className="background" variants={sidebar} />
+      <motion.div className="background" variants={sidebar} />
+      <div
+        style={{ pointerEvents: isOpen ? "all" : "none" }}
+        className="nav-container"
+      >
         <MobileNavigation />
-        <MenuToggle toggle={() => toggleOpen()} toggleState={isOpen} />
       </div>
+      <MenuToggle toggle={() => toggleOpen()} toggleState={isOpen} />
     </motion.div>
   );
 };
