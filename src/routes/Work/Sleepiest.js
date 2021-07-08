@@ -5,22 +5,21 @@ import WorkHeader from "../../components/WorkHeader/WorkHeader";
 import style from "./Works.module.scss";
 import Navigation from "../../components/Navigation/Navigation";
 
-
 const Sleepiest = () => {
   return (
     <>
-    <nav className={style.navContainer}>
-      <Link to="/">
-        <div className={style.logo}>
-          <img
-            src={require("../../assets/svg/pixelchef-emblem-white.svg")}
-            alt="pixelchef emblem"
-          />
-          <img
-            src={require("../../assets/svg/pixelchef-text-white.svg")}
-            alt="pixelchef text"
-          />
-        </div>
+      <nav className={style.navContainer}>
+        <Link to="/">
+          <div className={style.logo}>
+            <img
+              src={require("../../assets/svg/pixelchef-emblem-white.svg")}
+              alt="pixelchef emblem"
+            />
+            <img
+              src={require("../../assets/svg/pixelchef-text-white.svg")}
+              alt="pixelchef text"
+            />
+          </div>
         </Link>
         <Navigation />
       </nav>
@@ -72,12 +71,20 @@ const Sleepiest = () => {
           </div>
           <div className={style.bottomWrapper}>
             <div className={style.home__bottom}>
-              <Link to="/work/ulesson">uLesson</Link>
-              <Link to="/work/ulesson">uLesson</Link>
-              <Link to="/work/ulesson">uLesson</Link>
-              <Link to="/work/ulesson">uLesson</Link>
-              <Link to="/work/ulesson">uLesson</Link>
-              <Link to="/work/ulesson">uLesson</Link>
+              <div className={style.home__bottomWrapper}>
+                <Link to="/work/ulesson">uLesson</Link>
+                <Link to="/work/ulesson">uLesson</Link>
+                <Link to="/work/ulesson">uLesson</Link>
+                <Link to="/work/ulesson">uLesson</Link>
+                <Link to="/work/ulesson">uLesson</Link>
+                <Link to="/work/ulesson">uLesson</Link>
+                <Link to="/work/ulesson">uLesson</Link>
+                <Link to="/work/ulesson">uLesson</Link>
+                <Link to="/work/ulesson">uLesson</Link>
+                <Link to="/work/ulesson">uLesson</Link>
+                <Link to="/work/ulesson">uLesson</Link>
+                <Link to="/work/ulesson">uLesson</Link>
+              </div>
             </div>
           </div>
         </section>

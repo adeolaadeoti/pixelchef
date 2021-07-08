@@ -35,10 +35,24 @@ $white: #ffffff;
     padding-left: 10rem;
     font-size: 4.5rem;
     font-weight: 100;
+
+    @media only screen and (max-width: 50em) {
+      padding-left: 2rem;
+    }
+    @media only screen and (max-width: 40em) {
+      padding-left: 0rem;
+    }
   }
 
   form {
     padding: 0 20rem;
+
+    @media only screen and (max-width: 50em) {
+      padding: 0 2rem;
+    }
+    @media only screen and (max-width: 40em) {
+      padding: 0 0rem;
+    }
     .input {
       display: block;
       background-color: transparent;

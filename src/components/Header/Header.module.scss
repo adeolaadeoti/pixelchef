@@ -2,50 +2,62 @@
     variables
 ---------------------------*/
 //fonts
-$primary-font: 'Trueno-Light', sans-serif;
-$secondary-font: 'Trueno-Regular', sans-serif;
+$primary-font: "Trueno-Light", sans-serif;
+$secondary-font: "Trueno-Regular", sans-serif;
 
 //colors
 $primary-color: #000000;
-$secondary-color: #F9B42A;
-$gray: #ACACAC;
-$white: #FFFFFF;
+$secondary-color: #f9b42a;
+$gray: #acacac;
+$white: #ffffff;
 
 .header {
-    position: relative;
-    background-image: url('../../assets/png/section-header.png');
-    padding: 8rem 8rem;
-    color: $white;
-    background-size: cover;
+  position: relative;
+  background-image: url("../../assets/png/section-header.png");
+  padding: 8rem 8rem;
+  color: $white;
+  background-size: cover;
 
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 3rem;
+  @media only screen and (max-width: 39em) {
+    padding: 8rem 5rem;
+  }
 
-        h1 {
-            font-weight: 100;
-            line-height: 1.3em;
-            span {
-                font-family: 'Trueno-RegularLight';
-            }
-        }
-        div {
-            display: flex;
-            align-items: flex-start;
-            img {
-                width: 20rem;
-                height: 15rem;
-                object-fit: cover;
-                object-position: right;
-                margin-right: 3rem;
-            }
-            span {
-                width: 7.5rem;
-                background-color: $secondary-color;
-                height: 7.5rem;
-            }
-        }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+    @media only screen and (max-width: 39em) {
+      margin-top: 6rem;
     }
+
+    h1 {
+      font-weight: 100;
+      line-height: 1.3em;
+      span {
+        font-family: "Trueno-RegularLight";
+      }
+    }
+    div {
+      display: flex;
+      align-items: flex-start;
+
+      @media only screen and (max-width: 39em) {
+        display: none;
+      }
+      img {
+        width: 20rem;
+        height: 15rem;
+        object-fit: cover;
+        object-position: right;
+        margin-right: 3rem;
+      }
+      span {
+        width: 7.5rem;
+        background-color: $secondary-color;
+        height: 7.5rem;
+      }
+    }
+  }
 }

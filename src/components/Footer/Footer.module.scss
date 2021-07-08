@@ -20,6 +20,7 @@ $white: #ffffff;
   //   grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
   @media only screen and (max-width: 50em) {
     height: 100rem;
+    padding: 8rem 3rem;
   }
   @media only screen and (max-width: 40em) {
     height: 100%;
