@@ -8,18 +8,18 @@ import Navigation from "../../components/Navigation/Navigation";
 const Work = () => {
   return (
     <>
-    <nav className={style.navContainer}>
-      <Link to="/">
-        <div className={style.logo}>
-          <img
-            src={require("../../assets/svg/pixelchef-emblem-white.svg")}
-            alt="pixelchef emblem"
-          />
-          <img
-            src={require("../../assets/svg/pixelchef-text-white.svg")}
-            alt="pixelchef text"
-          />
-        </div>
+      <nav className={style.navContainer}>
+        <Link to="/">
+          <div className={style.logo}>
+            <img
+              src={require("../../assets/svg/pixelchef-emblem-white.svg")}
+              alt="pixelchef emblem"
+            />
+            <img
+              src={require("../../assets/svg/pixelchef-text-white.svg")}
+              alt="pixelchef text"
+            />
+          </div>
         </Link>
         <Navigation />
       </nav>
@@ -35,55 +35,52 @@ const Work = () => {
             </p>
           </div>
           <div className={style.about__workWrapper}>
-            <Link to="/work/ulesson" className={style.box}>
+            <Link to="/work" className={style.box}>
               <div>
                 <img
-                  src={require("../../assets/png/uLesson.png")}
-                  alt="uLesson"
+                  src={require("../../assets/png/plapus.png")}
+                  alt="Plapus"
                 />
-                <span>Branding</span>
+                <span>UI / UX</span>
               </div>
-              <h3 className={style.about__h3}>
-                ULesson -<span>Online platform for distance learning.</span>
-              </h3>
-            </Link>
-            <Link to="/work/sleepiest" className={style.box}>
-              <div>
-                <img
-                  src={require("../../assets/png/sleepiest.png")}
-                  alt="sleepiest"
-                />
-                <span>UI/UX</span>
-              </div>
-              <h3 className={style.about__h3}>
-                Sleepiest –<br />
-                <span>Sleep app helps millions fall asleep every night.</span>
-              </h3>
-            </Link>
-            <Link to="/work/monmarche" className={style.box}>
-              <div>
-                <img
-                  src={require("../../assets/png/monMarche.png")}
-                  alt="mon mache"
-                />
-                <span>Packaging</span>
-              </div>
-              <h3 className={style.about__h3}>
-                Mon Marché – <br />
-                <span>Home delivery of fresh fruit and vegetables</span>
+              <h3>
+                <span>Plapus –</span> Coming Soon
               </h3>
             </Link>
             <Link to="/work" className={style.box}>
               <div>
                 <img
-                  src={require("../../assets/png/puntoPago.png")}
-                  alt="puntoPago"
+                  src={require("../../assets/png/oredoo.png")}
+                  alt="oredoo"
                 />
-                <span>UI/UX</span>
+                <span>Branding</span>
               </div>
-              <h3 className={style.about__h3}>
-                Punto Pago – <br />
-                <span>Panama’s first online service for paying bills</span>
+              <h3>
+                <span>Oredoo –</span> Coming Soon
+              </h3>
+            </Link>
+            <Link to="/work" className={style.box}>
+              <div>
+                <img
+                  src={require("../../assets/png/homewey.png")}
+                  alt="homewey"
+                />
+                <span>Branding</span>
+              </div>
+              <h3>
+                <span>Homewey –</span> Coming Soon
+              </h3>
+            </Link>
+            <Link to="/work" className={style.box}>
+              <div>
+                <img
+                  src={require("../../assets/png/heatrow.png")}
+                  alt="heatrow"
+                />
+                <span>Website</span>
+              </div>
+              <h3>
+                <span>Heatrow –</span> Coming Soon
               </h3>
             </Link>
           </div>

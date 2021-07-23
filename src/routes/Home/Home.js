@@ -46,14 +46,14 @@ const Home = () => {
               <img src={require("../../assets/png/header-1.png")} alt="" />
             </div>
             <Link className={style.innerBox} to="/work">
-              <img src={require("../../assets/png/header-2.png")} alt="" />
+              <img src={require("../../assets/png/oredoo.png")} alt="" />
             </Link>
             <div className={style.innerBox__3}></div>
           </div>
           <div className={style.box2}>
             <div className={style.innerBox__1}></div>
             <Link className={style.innerBox} to="/work">
-              <img src={require("../../assets/png/header-3.png")} alt="" />
+              <img src={require("../../assets/png/heatrow.png")} alt="" />
             </Link>
             <div className={style.innerBox}>
               <img src={require("../../assets/png/header-4.png")} alt="" />
@@ -75,53 +75,49 @@ const Home = () => {
             <Link to="/work" className={style.box}>
               <div>
                 <img
-                  src={require("../../assets/png/uLesson.png")}
-                  alt="uLesson"
-                />{" "}
-                <span>Branding</span>{" "}
+                  src={require("../../assets/png/plapus.png")}
+                  alt="Plapus"
+                />
+                <span>UI / UX</span>
               </div>
               <h3>
-                <span>uLesson –</span> Online platform <br />
-                for distance learning.
+                <span>Plapus –</span> Coming Soon
               </h3>
             </Link>
             <Link to="/work" className={style.box}>
               <div>
                 <img
-                  src={require("../../assets/png/sleepiest.png")}
-                  alt="uLesson"
-                />{" "}
-                <span>UI/UX</span>{" "}
+                  src={require("../../assets/png/oredoo.png")}
+                  alt="oredoo"
+                />
+                <span>Branding</span>
               </div>
               <h3>
-                <span>Sleepiest –</span> Sleep app helps <br />
-                millions fall asleep every night.
+                <span>Oredoo –</span> Coming Soon
               </h3>
             </Link>
             <Link to="/work" className={style.box}>
               <div>
                 <img
-                  src={require("../../assets/png/monMarche.png")}
-                  alt="uLesson"
-                />{" "}
-                <span>Packaging</span>{" "}
+                  src={require("../../assets/png/homewey.png")}
+                  alt="homewey"
+                />
+                <span>Branding</span>
               </div>
               <h3>
-                <span>Mon Marché –</span> Home delivery <br />
-                of fresh fruit and vegetables.
+                <span>Homewey –</span> Coming Soon
               </h3>
             </Link>
             <Link to="/work" className={style.box}>
               <div>
                 <img
-                  src={require("../../assets/png/puntoPago.png")}
-                  alt="uLesson"
-                />{" "}
-                <span>UI/UX</span>{" "}
+                  src={require("../../assets/png/heatrow.png")}
+                  alt="heatrow"
+                />
+                <span>Website</span>
               </div>
               <h3>
-                <span>Punto Pago –</span> Panama’s first <br />
-                online service for paying bills.
+                <span>Heatrow –</span> Coming Soon
               </h3>
             </Link>
           </div>
